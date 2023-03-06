@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Josefin+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script type="text/javascript" src="js/animate.js"></script> -->
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html" onclick="myHomePage"
+            >MDesign</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                  onclick="myHomePage"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="about.html"
+                  onclick="myAboutPage"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <ul class="list-unstyled nav-social">
+              <li>
+                <a
+                  href="https://www.facebook.com/manjushree.ranjitkar/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://dribbble.com/manjushree" target="_blank"
+                  ><i class="fa-brands fa-dribbble"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/manjushree-ranjitkar-39938292/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- intro -->
+    <section class="hero-area">
+      <div class="container flex-column">
+        <div class="row align-items-center">
+          <!-- <div class="col-lg-4 align-items-center">
+            
+          </div> -->
+          <div class="col-lg-12 d-flex hero-wrapper">
+            <div class="hero-image">
+              <img src="img/manjushree.png" alt="Manjushree" />
+            </div>
+            <div class="hero-info">
+              <h1>
+                Hello. <span class="wave">👋</span><br />I'm
+                <span class="text-primary">Manjushree</span>, a Web & UI/UX
+                <span class="text-primary">designer </span>located in London
+              </h1>
+              <div class="d-flex align-items-center mt-4">
+                <a
+                  href="#"
+                  onclick="window.open('Manjushree_Ranjitkar_CV.pdf', '_blank', 'fullscreen=yes'); return false;"
+                >
+                  <button type="button" class="btn btn-primary">
+                    Download CV <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-angle"></div>
+    </section>
+
+    <!-- work section -->
+    <section id="work" class="section work">
+      <div class="container">
+        <h2 class="header">Some of My Work</h2>
+        <div class="row justify-content-end align-items-center">
+          <div class="col-lg-7 col-md-6 col-sm-12">
+            <img class="img-fluid" alt="neemaacademy" srcset="img/1nn.png" />
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 mt-3">
+            <h3 class="sub-header">Neema Academy</h3>
+            <p class="p-medium text-grey">
+              Neema Academy is a web and mobile learning platform in Nepal
+              offering video courses and tutorials in various subjects and
+              skills.
+            </p>
+            <div class="learn-more">
+              <a href="neemacademy.html" onclick="myp1">Learn More</a>
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row justify-content-end align-items-center flex-row-reverse"
+        >
+          <div class="col-lg-7 col-md-7 col-sm-12">
+            <img class="img-fluid" src="img/contentder.png" alt="contentder" />
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12">
+            <h3 class="sub-header">Contentder</h3>
+            <p>
+              Contentder Nepal: A website builder & content management system
+              with templates, e-commerce, SEO & social media integration.
+            </p>
+            <div class="learn-more">
+              <a href="contentder.html" onclick="myp2">Learn More</a>
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-end align-items-center">
+          <div class="col-lg-7 col-md-7 col-sm-12">
+            <img class="img-fluid" src="img/sageflick.png" alt="sageflick" />
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12">
+            <h3 class="sub-header">SageFlick</h3>
+            <p>
+              Sageflick offers a user-friendly ticket management system for
+              theaters with online booking, seat selection, and payment
+              processing.
+            </p>
+            <div class="learn-more">
+              <a href="sageflick.html" onclick="myp2">Learn More</a>
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sample section-->
+    <section class="section pt-0 ui-project">
+      <div class="container">
+        <h2 class="header">Recent UI Project</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <div class="image">
+              <figure>
+                <img
+                  src="img/kitchen.png"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                  alt="The Thai Kitchen"
+                />
+
+                <figcaption>
+                  <a
+                    href="https://www.figma.com/file/HRxcX2QnJfALjT6nisb2wW/The-Thai-Kitchen?node-id=0%3A1&t=b02QPfg2AFaRefkF-1"
+                    target="_blank"
+                    >View</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="image">
+              <figure>
+                <img
+                  src="img/Travel.png"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                  alt="Travel Website"
+                />
+
+                <figcaption>
+                  <a
+                    href="https://www.figma.com/file/6keXXC74OiNZ1crauu9kln/Travel?node-id=0%3A1&t=ilNzGRAAvqkuB1oG-1"
+                    target="_blank"
+                    >View</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="image">
+              <figure>
+                <img
+                  src="img/cosmetic.png"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                  alt="Cosmetic App"
+                />
+
+                <figcaption>
+                  <a
+                    href="https://www.figma.com/file/KhSWVqaQjJvcgZ8qVQv5Fa/Cosmetic-App?node-id=0%3A1&t=3m29ZOLBVRiCUVJm-1"
+                    target="_blank"
+                    >View</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- Gallery -->
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section section-contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div class="d-flex contact-wrapper">
+              <h2 class="header">
+                Interested&nbsp;?<br />
+                Lets Get In Touch&nbsp;!
+              </h2>
+
+              <div class="contact">
+                <div class="detail">
+                  <p>
+                    I’m active on
+                    <a
+                      href="https://www.linkedin.com/in/manjushree-ranjitkar-39938292/ "
+                      target="_blank"
+                      >Linkedin</a
+                    >
+                  </p>
+                  <p>Call me on <span>+44 7424614127</span></p>
+                </div>
+
+                <div class="email">
+                  <a href="mailto:your@email.com?subject=Subject">
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <span class="mail" data-status="Click to Copy! "
+                      >m5u.ranjitkar@gmail.com</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
