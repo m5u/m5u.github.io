@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="/css/main.css" />
 
     <script type="text/javascript" src="js/main.js"></script>
-    <!-- <script type="text/javascript" src="js/animate.js"></script> -->
   </head>
 
   <body>
@@ -52,7 +51,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul
@@ -109,20 +110,20 @@
     <section class="hero-area">
       <div class="container flex-column">
         <div class="row align-items-center">
-          <!-- <div class="col-lg-4 align-items-center">
-            
-          </div> -->
           <div class="col-lg-12 d-flex hero-wrapper">
             <div class="hero-image">
-              <img src="img/manjushree.png" alt="Manjushree" />
+              <img src="img/manjushree.jpg" alt="Manjushree" />
             </div>
             <div class="hero-info">
-              <h1>
-                Hello. <span class="wave">👋</span><br />I'm
-                <span class="text-primary">Manjushree</span>, a Web & UI/UX
-                <span class="text-primary">designer </span>located in London
-              </h1>
-              <div class="d-flex align-items-center mt-4">
+              <h1>Hello. <span class="wave">👋</span></h1>
+
+              <h2>
+                I'm <span class="text-primary">Manjushree</span>, a Web & UI/UX
+                <span class="text-primary">designer </span>located in London. I
+                Create Web, Mobile & Saas Products
+              </h2>
+
+              <div class="d-flex align-items-center mt-4 btn-wrapper">
                 <a
                   href="#"
                   onclick="window.open('Manjushree_Ranjitkar_CV.pdf', '_blank', 'fullscreen=yes'); return false;"
@@ -131,24 +132,121 @@
                     Download CV <i class="fa-solid fa-arrow-right"></i>
                   </button>
                 </a>
+                <a href="#contact" class="btn btn-light">
+                  <span>Get In Touch</span>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="hero-angle"></div>
     </section>
+    <!-- Recent Work section-->
+    <section class="section ui-project">
+      <div class="container">
+        <div class="header">Recent UI Project</div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
+            <div class="image">
+              <figure>
+                <img
+                  src="img/kitchen.png "
+                  class="w-100 shadow-1-strong mb-4"
+                  alt="The Thai Kitchen "
+                />
 
+                <figcaption>
+                  <a
+                    href="https://www.figma.com/file/HRxcX2QnJfALjT6nisb2wW/The-Thai-Kitchen?node-id=0%3A1&t=b02QPfg2AFaRefkF-1 "
+                    target="_blank "
+                    >View</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
+            <div class="image">
+              <figure>
+                <img
+                  src="img/Travel.png "
+                  class="w-100 shadow-1-strong mb-4"
+                  alt="Travel Website "
+                />
+
+                <figcaption>
+                  <a
+                    href="https://www.figma.com/file/6keXXC74OiNZ1crauu9kln/Travel?node-id=0%3A1&t=ilNzGRAAvqkuB1oG-1 "
+                    target="_blank "
+                    >View</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
+            <div class="image">
+              <figure>
+                <img
+                  src="img/cosmetic.png "
+                  class="w-100 shadow-1-strong mb-4"
+                  alt="Cosmetic App "
+                />
+
+                <figcaption>
+                  <a
+                    href="https://www.figma.com/file/KhSWVqaQjJvcgZ8qVQv5Fa/Cosmetic-App?node-id=0%3A1&t=3m29ZOLBVRiCUVJm-1 "
+                    target="_blank "
+                    >View</a
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- Gallery -->
+      </div>
+    </section>
     <!-- work section -->
-    <section id="work" class="section work">
+
+    <section id="work" class="section work pt-0">
       <div class="container">
         <h2 class="header">Some of My Work</h2>
+        <div
+          class="row justify-content-end align-items-center flex-row-reverse"
+        >
+          <div class="col-lg-7 col-md-7 col-sm-12">
+            <div class="image-container">
+              <img
+                class="img-fluid"
+                alt="Lacuna Crafts "
+                src="img/LacunaCrafts.png "
+              />
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12">
+            <h3 class="mb-2">Lacuna Crafts</h3>
+            <p class="p-medium text-grey">
+              Lacuna Crafts is a Nepalese social enterprise that creates
+              eco-friendly wood craft products using local materials and
+              traditional craftsmanship.
+            </p>
+            <div class="learn-more coming-soon">
+              <a href="" onclick="">Coming Soon</a>
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
         <div class="row justify-content-end align-items-center">
           <div class="col-lg-7 col-md-6 col-sm-12">
-            <img class="img-fluid" alt="neemaacademy" srcset="img/1nn.png" />
+            <div class="image-container">
+              <img class="img-fluid" alt="neemaacademy" srcset="img/1nn.png" />
+            </div>
           </div>
           <div class="col-lg-5 col-md-5 col-sm-12 mt-3">
-            <h3 class="sub-header">Neema Academy</h3>
+            <h3 class="mb-2">Neema Academy</h3>
             <p class="p-medium text-grey">
               Neema Academy is a web and mobile learning platform in Nepal
               offering video courses and tutorials in various subjects and
@@ -164,10 +262,16 @@
           class="row justify-content-end align-items-center flex-row-reverse"
         >
           <div class="col-lg-7 col-md-7 col-sm-12">
-            <img class="img-fluid" src="img/contentder.png" alt="contentder" />
+            <div class="image-container">
+              <img
+                class="img-fluid"
+                src="img/contentder.png"
+                alt="contentder"
+              />
+            </div>
           </div>
           <div class="col-lg-5 col-md-5 col-sm-12">
-            <h3 class="sub-header">Contentder</h3>
+            <h3 class="mb-2">Contentder</h3>
             <p>
               Contentder Nepal: A website builder & content management system
               with templates, e-commerce, SEO & social media integration.
@@ -180,10 +284,12 @@
         </div>
         <div class="row justify-content-end align-items-center">
           <div class="col-lg-7 col-md-7 col-sm-12">
-            <img class="img-fluid" src="img/sageflick.png" alt="sageflick" />
+            <div class="image-container">
+              <img class="img-fluid" src="img/sageflick.png" alt="sageflick" />
+            </div>
           </div>
           <div class="col-lg-5 col-md-5 col-sm-12">
-            <h3 class="sub-header">SageFlick</h3>
+            <h3 class="mb-2">SageFlick</h3>
             <p>
               Sageflick offers a user-friendly ticket management system for
               theaters with online booking, seat selection, and payment
@@ -197,109 +303,61 @@
         </div>
       </div>
     </section>
-    <!-- Sample section-->
-    <section class="section pt-0 ui-project">
-      <div class="container">
-        <h2 class="header">Recent UI Project</h2>
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <div class="image">
-              <figure>
-                <img
-                  src="img/kitchen.png"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="The Thai Kitchen"
-                />
 
-                <figcaption>
-                  <a
-                    href="https://www.figma.com/file/HRxcX2QnJfALjT6nisb2wW/The-Thai-Kitchen?node-id=0%3A1&t=b02QPfg2AFaRefkF-1"
-                    target="_blank"
-                    >View</a
-                  >
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="image">
-              <figure>
-                <img
-                  src="img/Travel.png"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Travel Website"
-                />
-
-                <figcaption>
-                  <a
-                    href="https://www.figma.com/file/6keXXC74OiNZ1crauu9kln/Travel?node-id=0%3A1&t=ilNzGRAAvqkuB1oG-1"
-                    target="_blank"
-                    >View</a
-                  >
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="image">
-              <figure>
-                <img
-                  src="img/cosmetic.png"
-                  class="w-100 shadow-1-strong rounded mb-4"
-                  alt="Cosmetic App"
-                />
-
-                <figcaption>
-                  <a
-                    href="https://www.figma.com/file/KhSWVqaQjJvcgZ8qVQv5Fa/Cosmetic-App?node-id=0%3A1&t=3m29ZOLBVRiCUVJm-1"
-                    target="_blank"
-                    >View</a
-                  >
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-        <!-- Gallery -->
-      </div>
-    </section>
     <!-- footer -->
-    <footer class="section section-contact">
+    <footer id="contact " class="section section-contact">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-12">
-            <div class="d-flex contact-wrapper">
-              <h2 class="header">
-                Interested&nbsp;?<br />
-                Lets Get In Touch&nbsp;!
-              </h2>
+            <div class="contact-wrapper">
+              <p class="sub-header">Interested&nbsp;?</p>
+              <h2 class="header">Lets Work Together</h2>
 
-              <div class="contact">
-                <div class="detail">
-                  <p>
-                    I’m active on
+              <p>
+                I can assist with your website, app, SaaS products. Feel free to
+                contact me.
+              </p>
+              <p>Call me on <span>+44 7424614127</span></p>
+
+              <div class="btn btn-primary">
+                <a href="mailto:your@email.com?subject=Subject ">
+                  <i class="fa-regular fa-envelope"></i>
+
+                  <span class="mail" data-status="Click to Copy! "
+                    >m5u.ranjitkar@gmail.com</span
+                  >
+                </a>
+              </div>
+
+              <div class="social-icons">
+                <ul class="list-unstyled nav-social">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/manjushree.ranjitkar/ "
+                      target="_blank "
+                    >
+                      <i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://dribbble.com/manjushree " target="_blank "
+                      ><i class="fa-brands fa-dribbble"></i
+                    ></a>
+                  </li>
+                  <li>
                     <a
                       href="https://www.linkedin.com/in/manjushree-ranjitkar-39938292/ "
-                      target="_blank"
-                      >Linkedin</a
-                    >
-                  </p>
-                  <p>Call me on <span>+44 7424614127</span></p>
-                </div>
-
-                <div class="email">
-                  <a href="mailto:your@email.com?subject=Subject">
-                    <i class="fa-regular fa-envelope"></i>
-
-                    <span class="mail" data-status="Click to Copy! "
-                      >m5u.ranjitkar@gmail.com</span
-                    >
-                  </a>
-                </div>
+                      target="_blank "
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                </ul>
               </div>
             </div>
+            <p class="footer-bottom">
+              © 2023 All rights reserved. Designed &amp; Coded by Manjushree
+              Ranjikar
+            </p>
           </div>
         </div>
       </div>
