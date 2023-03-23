@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Karla");
 body {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
+  font-family: "Karla";
+  font-size: 18px;
   line-height: 1.5;
   background: #fff;
 }
@@ -11,7 +13,6 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
   letter-spacing: -0.5px;
 }
 
@@ -21,14 +22,21 @@ a {
 
 /*-------------------------*/
 .section {
-  padding: 80px 0;
+  padding: 96px 0;
 }
 
+.navbar {
+  padding: 0;
+}
 .navbar.fixed-top {
   height: 96px;
 }
 .navbar .navbar-brand {
-  padding: 12px 16px;
+  margin: 12px 16px;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
 }
 .navbar .navbar-collapse {
   padding: 0 16px 0 0;
@@ -38,6 +46,8 @@ a {
   padding-left: 0.5rem;
   color: #151515;
   padding: 0 16px !important;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 .navbar ul li a:hover {
   color: #0d6efd;
@@ -97,14 +107,22 @@ button a {
   padding: 16px 32px;
   border-radius: 30px;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
   transition: all 0.3s ease;
 }
+.btn i {
+  margin: 0 0 0 8px;
+  font-size: 14px;
+}
 .btn.btn-primary:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
 }
 .btn.btn-primary:hover a {
-  color: #fff;
+  color: #fff !important;
+}
+.btn.btn-primary:active {
+  outline: none;
+  border: none;
 }
 
 .text-overlay {
@@ -125,8 +143,7 @@ button a {
 .hero-area {
   position: relative;
   overflow: hidden;
-  padding-top: 12vw;
-  padding-bottom: 5vw;
+  padding: 240px 0 80px;
   background: #e8f1ff;
 }
 .hero-area .container {
@@ -135,6 +152,9 @@ button a {
   height: inherit;
   position: relative;
   z-index: 9;
+}
+.hero-area .container .row {
+  width: 100%;
 }
 .hero-area .hero-angle {
   position: absolute;
@@ -158,7 +178,6 @@ button a {
   height: 300px;
   border-radius: 50%;
   overflow: hidden;
-  background: #f58857;
 }
 .hero-area .hero-image img {
   width: 100%;
@@ -213,8 +232,16 @@ button a {
   font-weight: 800;
   margin: 0;
 }
-.hero-area span {
-  color: #262a4f;
+.hero-area .hero-info .btn-primary {
+  margin: 0 16px 0 0;
+}
+.hero-area .hero-info .btn-light {
+  background: none;
+  color: #0d6efd;
+}
+.hero-area .hero-info .btn-light:hover {
+  background: #e5e5ff;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
 }
 .hero-area .panel-text-label {
   margin-bottom: 4px;
@@ -291,6 +318,70 @@ button a {
   background-color: #f96a4c;
   opacity: 0.1;
 }
+.hero-area.sub-hero-area {
+  padding: 240px 0 80px 0;
+}
+.hero-area.sub-hero-area h1 {
+  margin: 0;
+}
+.hero-area.sub-hero-area.project-hero-area {
+  display: flex;
+  align-items: end;
+  overflow: hidden;
+}
+.hero-area.sub-hero-area.project-hero-area .header {
+  margin: 0;
+  font-weight: 800;
+}
+.hero-area.sub-hero-area.project-hero-area .image-container {
+  width: 75%;
+  height: 300px;
+  position: relative;
+  z-index: 99;
+}
+.hero-area.sub-hero-area.project-hero-area .image-container .image {
+  width: 100%;
+  height: 100%;
+  margin: 15px 0 0;
+}
+.hero-area.sub-hero-area.project-hero-area .hero-angle {
+  position: absolute;
+  left: -10vw;
+  bottom: 5vw;
+  z-index: 1;
+  width: 120vw;
+  height: 25vw;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  -webkit-transform: translate(0px, 13vw) rotate(9deg);
+  -ms-transform: translate(0px, 13vw) rotate(9deg);
+  transform: translate(0px, 13vw) rotate(9deg);
+}
+.hero-area.sub-hero-area.project-hero-area .hero-info {
+  padding: 0 40px 0 0;
+}
+.hero-area.sub-hero-area.project-hero-area .hero-image {
+  background: none;
+  border-radius: 0;
+  width: 50%;
+  height: 300px;
+  position: relative;
+  overflow: visible;
+  margin: -60px 0 0 0;
+}
+.hero-area.sub-hero-area.project-hero-area .hero-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.hero-area.sub-hero-area.project-hero-area.about .header {
+  margin: 0;
+  font-weight: 800;
+  padding: 80px 0;
+}
 
 .intro-image {
   position: relative;
@@ -334,7 +425,7 @@ button a {
   background-color: #18033C;
   height: 2px;
   width: 25px;
-  margin: -4px 0 0 10px;
+  margin: 0 0 0 10px;
   transition: width 400ms;
 }
 .learn-more:hover a {
@@ -344,13 +435,22 @@ button a {
   width: 50px;
   background-color: #0d6efd;
 }
+.learn-more.coming-soon a {
+  color: #a2a2a2;
+}
+.learn-more.coming-soon .arrow {
+  width: 25px;
+  background-color: #a2a2a2;
+}
 
+/*------------------*/
 .work {
   position: relative;
   z-index: 999;
 }
 .work h3 {
-  margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: 800;
 }
 .work p {
   margin-bottom: 16px;
@@ -359,14 +459,45 @@ button a {
   will-change: transform;
   transition: transform 150ms;
 }
-.work .img-fluid:hover {
+.work .image-container {
+  text-align: center;
+}
+.work .row:hover .img-fluid {
   transition: transform 250ms;
   transform: translate(0px, -25px);
 }
 
+.project-block {
+  background: #fcfcfc;
+  border-radius: 12px;
+  padding: 64px;
+  margin: 0 0 32px 0;
+  will-change: transform;
+  transition: transform 150ms;
+  cursor: pointer;
+}
+.project-block .image-container {
+  max-height: 300px;
+  height: 300px;
+  overflow: hidden;
+  text-align: center;
+  margin: 32px 0 0;
+}
+.project-block:hover {
+  transition: transform 250ms;
+  transform: translate(0px, -25px);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+}
+.project-block.pending:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/*--------------------------------*/
 .ui-project .image {
   width: 100%;
   height: 250px;
+  border-radius: 12px;
   overflow: hidden;
 }
 .ui-project .image figure {
@@ -376,6 +507,7 @@ button a {
   position: relative;
 }
 .ui-project .image figure img {
+  height: 100%;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.5s ease-in-out;
@@ -416,8 +548,12 @@ button a {
 }
 
 .header {
-  font-size: 48px;
-  margin: 0 0 56px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0 0 32px 0;
+  color: rgb(51, 51, 51);
+  letter-spacing: 2.5px;
+  font-weight: 600;
 }
 
 .sub-header {
@@ -444,13 +580,39 @@ button a {
   background-color: #000;
   padding: 80px 0;
 }
+.section-contact .sub-header {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
 .section-contact .header {
   color: #F3F2F4;
-  margin: 0;
+  margin: 0 0 32px 0;
+  font-size: 3rem;
 }
 .section-contact .contact-wrapper {
-  align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-contact .contact-wrapper .btn-primary a {
+  color: #fff;
+}
+.section-contact .contact-wrapper .social-icons {
+  margin: 32px 0 0;
+}
+.section-contact .contact-wrapper .social-icons ul {
+  display: flex;
+}
+.section-contact .contact-wrapper .social-icons ul li {
+  margin: 0 8px;
+  width: 40px;
+}
+.section-contact .contact-wrapper .social-icons ul i {
+  font-size: 16px;
+  color: #fff;
 }
 .section-contact .contact-wrapper .contact {
   padding: 0 0 0 120px;
@@ -461,10 +623,13 @@ button a {
 .section-contact .contact-wrapper .contact a:hover {
   color: #0d6efd;
 }
+.section-contact .btn-primary {
+  margin: 32px 0 0;
+}
 .section-contact p {
   color: #fff;
-  line-height: 16px;
   margin: 0 0 10px 0;
+  text-align: center;
 }
 .section-contact .email {
   display: inline-flex;
@@ -497,6 +662,12 @@ button a {
 .section-contact .email:hover span {
   color: #000;
 }
+.section-contact .footer-bottom {
+  text-align: center;
+  margin: 48px 0 0;
+  opacity: 0.5;
+  font-size: 14px;
+}
 
 /*-------About--------*/
 .about-me {
@@ -505,7 +676,6 @@ button a {
 .about-me .image {
   width: 100%;
   height: 460px;
-  background: #f58857;
   border-radius: 200px;
   overflow: hidden;
 }
@@ -559,55 +729,6 @@ button a {
 }
 
 /*------------------------*/
-.project-hero-area {
-  padding: 0;
-  position: relative;
-  min-height: 26vw;
-  background-color: #f1ede9;
-  display: flex;
-  align-items: end;
-  overflow: hidden;
-}
-.project-hero-area .hero-content {
-  position: relative;
-  z-index: 99;
-  padding: 80px 0;
-}
-.project-hero-area .header {
-  margin: 0;
-  font-weight: 800;
-}
-.project-hero-area .image-container {
-  width: 75%;
-  height: 300px;
-  position: relative;
-  z-index: 99;
-}
-.project-hero-area .image-container .image {
-  width: 100%;
-  height: 100%;
-  margin: 15px 0 0;
-}
-.project-hero-area .hero-angle {
-  position: absolute;
-  left: -10vw;
-  bottom: 5vw;
-  z-index: 1;
-  width: 120vw;
-  height: 25vw;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #fff;
-  -webkit-transform: translate(0px, 13vw) rotate(9deg);
-  -ms-transform: translate(0px, 13vw) rotate(9deg);
-  transform: translate(0px, 13vw) rotate(9deg);
-}
-.project-hero-area.about .header {
-  margin: 0;
-  font-weight: 800;
-  padding: 80px 0;
-}
-
 .section-angle {
   position: absolute;
   z-index: 1;
@@ -654,23 +775,81 @@ button a {
     max-width: 100%;
     padding: 0 30px;
   }
-  .hero-area .hero-image {
-    width: 24vw !important;
-    height: 24vw !important;
-    max-height: none;
-    max-width: none;
+  .hero-area {
+    padding: 176px 0 80px;
+  }
+  .hero-area .hero-wrapper {
+    flex-direction: column;
   }
   .hero-area .hero-info {
-    max-width: calc(100% - 24vw);
-    padding: 20px 0 0 20px;
+    padding: 60px 0 0;
+    max-width: 100%;
   }
-  .hero-info h1 {
-    font-size: 4vw !important;
+  .hero-area.sub-hero-area {
+    padding: 176px 0 80px;
+  }
+  .hero-area.sub-hero-area.project-hero-area .hero-wrapper {
+    flex-direction: column-reverse;
+  }
+  .hero-area.sub-hero-area.project-hero-area .hero-image {
+    width: 100%;
+    margin: 0;
+  }
+  .hero-area.sub-hero-area.project-hero-area .hero-info {
+    padding: 0;
+    margin: 60px 0 0;
+  }
+  .navbar-toggler {
+    margin: 0 30px 0 0;
+    line-height: inherit;
+    height: 96px;
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+  .navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-toggler.collapsed {
+    border: none;
+    outline: none;
+  }
+  .navbar-toggler .navbar-toggler-icon i {
+    color: #000;
+  }
+  .navbar-collapse {
+    transition: all 0.3s ease;
+  }
+  .navbar-collapse ul {
+    transition-delay: 0.3s;
+    transition-delay: 1s;
+  }
+  .navbar-collapse.show {
+    height: 100vh;
+    background: #fff;
+    padding: 0;
+  }
+  .navbar-collapse.show ul {
+    background: #fff;
+  }
+  .navbar-collapse.show ul li {
+    padding: 16px 0;
+  }
+  .navbar ul li a.active:after {
+    display: none;
+  }
+  .about-me .image {
+    width: 400px;
+    height: auto;
+  }
+  .about-me .about-info {
+    padding: 80px 0 0;
   }
 }
 @media screen and (max-width: 768px) {
   .hero-area {
-    margin-bottom: 80px;
     padding: 120px 0 80px;
   }
   .hero-area .hero-angle {
@@ -678,6 +857,9 @@ button a {
   }
   .hero-area .hero-info h1 {
     font-size: 32px !important;
+  }
+  .hero-area.sub-hero-area {
+    padding: 120px 0 80px;
   }
   .header {
     font-size: 32px !important;
@@ -700,6 +882,12 @@ button a {
   .section-contact .contact-wrapper .contact .detail p {
     padding: 0 8px;
   }
+  .section-project-desc .header {
+    text-align: left !important;
+  }
+  .section-project-desc .project-intro p {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -711,5 +899,23 @@ button a {
   .hero-area .hero-info {
     max-width: 100%;
     padding: 32px 0 0;
+  }
+  .hero-area .btn-wrapper .btn {
+    padding: 16px 28px;
+  }
+  .hero-area.sub-hero-area {
+    padding: 120px 0 32px;
+  }
+  .hero-area.sub-hero-area.project-hero-area .hero-info {
+    padding: 0;
+  }
+  .hero-area.sub-hero-area.project-hero-area .hero-wrapper {
+    flex-direction: column-reverse;
+  }
+  .hero-area.sub-hero-area.project-hero-area .hero-image {
+    width: 100% !important;
+  }
+  .about-me .image {
+    width: 100%;
   }
 }
