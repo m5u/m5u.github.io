@@ -776,6 +776,51 @@ button a {
   height: 100%;
 }
 
+/*--------Persona---------*/
+.persona-block {
+  background: #f1f1f1;
+  border-radius: 16px;
+  padding: 32px;
+  margin: 0 0 32px 0;
+}
+.persona-block .image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 0 16px 0 0;
+  overflow: hidden;
+}
+.persona-block .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.persona-block .title {
+  font-weight: 800;
+  margin: 0 0 5px 0;
+}
+.persona-block .person-detail h5 {
+  font-weight: bold;
+}
+.persona-block .person-detail span {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+}
+.persona-block .person-detail .background {
+  margin: 24px 0 0;
+}
+.persona-block .persona-attributes {
+  margin: 24px -16px 0;
+}
+.persona-block .persona-attributes > div {
+  padding: 0 16px;
+}
+.persona-block .conclusion {
+  margin: 24px 0 0;
+}
+
 /*----Responsive----------*/
 @media screen and (max-width: 1280px) {
   .container {
