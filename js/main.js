@@ -23,6 +23,15 @@ function documentScroll() {
   });
 }
 
+function bodyScroll() {
+  var navbarToggler = document.querySelector(".navbar-toggler");
+  var body = document.body;
+
+  navbarToggler.addEventListener("click", function () {
+    body.classList.toggle("overflow");
+  });
+}
+
 function myP1() {
   window.location.href = "neemacademy.html";
 }
@@ -34,3 +43,8 @@ function myP2() {
 function myP3() {
   window.location.href = "safeflick.html";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  documentScroll();
+  bodyScroll();
+});
