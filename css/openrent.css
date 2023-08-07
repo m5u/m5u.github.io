@@ -12,6 +12,12 @@ p {
   line-height: 1.85;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .mb10 {
   margin-bottom: 10px !important;
 }
@@ -59,6 +65,11 @@ p {
   border-color: #468cc8;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 /*-----------------------------------*/
 .header {
   z-index: 999;
@@ -84,12 +95,10 @@ p {
 .header .nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header .nav-menu {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .header .nav-menu .nav-item a {
   padding: 24px 16px;
@@ -144,9 +153,9 @@ p {
   color: #468cc8;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.resposnive-nav-menu,
+.responsive-menu {
+  display: none;
 }
 
 .img-container {
@@ -195,7 +204,7 @@ p {
 .badge {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 16px;
-  padding: 8px;
+  padding: 4px 10px;
   top: 16px;
   left: 32px;
 }
@@ -244,9 +253,9 @@ p {
 
 .property-block-summary .menu-list {
   display: flex;
-  list-style: none;
-  padding: 0;
   margin: 0 -8px;
+  max-width: 100%;
+  overflow-x: auto;
 }
 .property-block-summary .menu-list li {
   padding: 6px 16px;
@@ -255,6 +264,7 @@ p {
   margin: 0 8px;
   transition: all 0.3s ease;
   cursor: pointer;
+  white-space: nowrap;
 }
 .property-block-summary .menu-list li.active {
   background-color: #468cc8;
@@ -305,9 +315,6 @@ p {
 .footer-logo {
   display: flex;
   height: 44px;
-}
-.footer-widget ul {
-  list-style: none;
 }
 .footer-widget ul li {
   padding: 5px 0;
@@ -403,25 +410,50 @@ p {
 }
 .card .list-meta {
   margin: 0 -24px;
-  list-style: none;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .card .list-meta li {
-  border-right: 1px dotted rgba(0, 0, 0, 0.45);
   padding: 0 24px;
-}
-.card .list-meta li:last-child {
-  border: none;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
 }
 .card .list-meta li i {
   color: #96969b;
-  font-size: 18px;
+  font-size: 16px;
+  margin-right: 8px;
 }
 .card .list-meta li .d-block {
   margin: 5px 0 0;
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px 0px;
+}
+
+.like-share {
+  margin-top: 8px;
+}
+.like-share ul {
+  margin: 0 -8px;
+  display: flex;
+}
+.like-share ul li {
+  width: 40px;
+  height: 40px;
+  background: rgba(70, 140, 200, 0.15);
+  color: #468cc8;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin: 0 8px;
+}
+.like-share ul li:hover {
+  background: #468cc8;
+  color: #fff;
 }
 
 .schedule-form .form {
@@ -456,9 +488,6 @@ p {
 }
 
 .rent-now ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -504,4 +533,87 @@ p {
   font-size: 13px;
   font-weight: 500;
   opacity: 0.8;
+}
+
+/*------------------------------------*/
+@media (max-width: 992px) {
+  .main-nav-menu,
+  .main-user {
+    display: none !important;
+  }
+  .responsive-menu {
+    display: flex;
+    position: relative;
+    z-index: 9;
+  }
+  .responsive-menu .responsive-bar {
+    margin: 0 -8px;
+  }
+  .responsive-menu .responsive-bar > div {
+    margin: 0 8px;
+  }
+  .resposnive-nav-menu {
+    padding: 0 !important;
+    position: absolute;
+    top: 50px;
+    height: calc(100vh - 50px);
+    left: 0%;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    z-index: 99;
+  }
+  .resposnive-nav-menu .nav-close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #0b0a12;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+  .resposnive-nav-menu .nav-menu {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+  }
+  .resposnive-nav-menu .nav-menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .resposnive-nav-menu .nav-menu .nav-item a {
+    padding: 24px;
+    text-align: center;
+  }
+  .resposnive-nav-menu.hide {
+    right: -150%;
+  }
+  .resposnive-nav-menu.show {
+    display: flex;
+    right: 0;
+    left: 0;
+    background: #fff;
+  }
+  .rent-now {
+    margin-top: 24px;
+  }
+  .footer-widget {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 800px) {
+  .custom-col {
+    width: 100% !important;
+    margin-bottom: 24px;
+  }
+  .custom-col:last-child {
+    margin: 0;
+  }
+  .property-block {
+    padding: 24px !important;
+  }
 }

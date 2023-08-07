@@ -13,7 +13,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <link href="css/openrent.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="openrent.js"></script>
   </head>
   <body>
     <header class="navbar-light header sticky">
@@ -28,28 +29,28 @@
                   alt="Header Logo"
                 />
               </a>
-              <ul class="nav-menu ms-auto">
+              <ul class="nav-menu main-nav-menu">
                 <li class="nav-item">
-                  <a href="nav-link" href="#">About</a>
+                  <a href="#" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                  <a href="nav-link" href="#">For Rent</a>
+                  <a href="#" href="#">For Rent</a>
                 </li>
                 <li class="nav-item">
-                  <a href="nav-link" href="#">For Sale</a>
+                  <a href="#" href="#">For Sale</a>
                 </li>
                 <li class="nav-item">
-                  <a href="nav-link" href="#">Pricing</a>
+                  <a href="#" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">
-                  <a href="nav-link" href="#">Services</a>
+                  <a href="#" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a href="nav-link" href="#">Contact</a>
+                  <a href="#" href="#">Contact</a>
                 </li>
               </ul>
 
-              <div class="d-flex ms-xl-auto">
+              <div class="d-flex main-user">
                 <form class="form-search form-inline my-lg-0">
                   <i class="fa fa-search" aria-hidden="true"></i>
                   <input
@@ -65,6 +66,42 @@
                     >Login / Register</a
                   >
                 </div>
+              </div>
+              <div class="responsive-menu">
+                <div class="d-flex responsive-bar">
+                  <div class="search"><i class="fa fa-search"></i></div>
+                  <div class="menu-bar" id="menu-bar" onclick="toggleShow()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="resposnive-nav-menu" class="resposnive-nav-menu show">
+                <!-- <div id="nav-close" class="nav-close" onclick="toggleClose()">
+                  <i class="fa fa-times"></i>
+                </div> -->
+                <ul class="nav-menu">
+                  <li class="nav-item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">For Rent</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">For Sale</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">Login / Register</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -152,16 +189,22 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-8">
-              <div class="p-5 bg-white rounded-4 mb-10">
+              <div class="p-5 bg-white rounded-4 property-block">
                 <div
                   class="property-title d-flex align-items-center position-relative"
                 >
                   <h2 class="mt-4 mb-8">
                     2 Bed Terraced House, Alabama Street, SE18
                   </h2>
+
                   <div class="price">$16,00 pm</div>
                 </div>
-
+                <div class="d-flex like-share">
+                  <ul>
+                    <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                  </ul>
+                </div>
                 <div
                   class="highlight-list d-flex flex-row flex-wrap align-items-center list-divider-dot gap-4 gap-md-0"
                 >
@@ -414,11 +457,10 @@
           <div class="row">
             <div class="col-xl-12">
               <h2 class="header-title mb-5">Similar Property</h2>
-              <!-- <button class="btn btn-primary">View All</button> -->
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 custom-col">
               <div class="card position-relative">
                 <img
                   class="card-img-top"
@@ -469,7 +511,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 custom-col">
               <div class="card position-relative">
                 <img
                   class="card-img-top"
@@ -520,7 +562,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 custom-col">
               <div class="card position-relative">
                 <img
                   class="card-img-top"
